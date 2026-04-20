@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+
+      @font-face {
+        font-family: "Helvetica Now Display";
+        src: url("HelveticaNowDisplay-Regular.otf");
+      }
+      .font-Helv {
+        font-family: "Helvetica Now Display";
+      }
+      .result {
+        width: 100%;
+        min-height: 20%;
+        background-color: #1f1f1f;
+        color: #eaeaea;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 1.1rem;
+        padding: 1rem;
+    
+      }
+      .utils {
+        width: 100%;
+        height: 20%;
+        background-color: #101010;
+        color: #eaeaea;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 1.1rem;
+        flex-direction: column;
+      }
+      .select-options .button img{
+        cursor: pointer;
+      }
+
+      .select-options .button h2{
+        cursor: pointer;
+      }
+      .reset{
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <main
+      class="min-h-screen w-full bg-neutral-950 flex items-center flex-col p-4 gap-3"
+    >
+      <h1
+        class="font-Helv h-fit bg-zinc-300 text-4xl uppercase text-neutral-300 font-extrabold tracking-tight mb-8 text-center"
+      >
+        Select Your Choice
+      </h1>
+      <div
+        class="select-options cursor-pointer w-full h-1/2 bg-red-100 flex items-center justify-center flex-wrap gap-6"
+      ></div>
+      <div class="result w-full bg-zinc-600">
+        <h2
+          class="userCh w-1/2 bg-zinc-600 text-neutral-100 font-Helv text-3xl"
+        ></h2>
+        <h2
+          class="compCh w-1/2 bg-zinc-600 text-neutral-100 font-Helv text-3xl"
+        ></h2>
+      </div>
+      <div class="utils w-full h-1/4 bg-zinc-700">
+        <button
+          class="reset cursor-pointer text-neutral-950 font-Helv font-extrabold uppercase text-xl py-[.4em] px-8 rounded-full bg-neutral-200"
+        >
+          Play Again
+        </button>
+        <div class="score flex justify-evenly w-full">
+          
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
